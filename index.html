@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+    <div class="anime1">
+        <img src="122.gif">
+    </div>
+    <div class="anime2">
+        <img src="421.gif">
+    </div>
+    <div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <form action="index2.html" target="_self">
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username" id="username" required/>
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password" id="password" required/>
+            <input type="submit" name="" value="Login" id="login">
+            <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have an account?</a>
+           
+        </form>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#login").click(function())
+            if ($("#username").val() == ""){
+                $(".input").addclass("error");
+            }
+            if ($("#username").val() == ""){
+                $(".password").addclass("error");
+            }
+        })
+    
+    </script>
+
+</body>
+</head>
+</html>
